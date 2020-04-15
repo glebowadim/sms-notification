@@ -5,7 +5,7 @@ from sms_notifservice import SmsNotifService
 with open('settings.json', "rb") as PFile:
     pwd_data = json.loads(PFile.read().decode('utf-8'))
 
-ov_url = "https://" + pwd_data["oneVizionUrl"]
+ov_url = "http://" + pwd_data["oneVizionUrl"]
 ov_login = pwd_data["oneVizionLogin"]
 ov_pwd = pwd_data["oneVizionPwd"]
 service_id = pwd_data["serviceId"]
